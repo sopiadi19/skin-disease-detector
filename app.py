@@ -7,11 +7,6 @@ import json
 import pandas as pd
 import os
 
-if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))  # Port yang diberikan oleh Heroku
-    app.run(host="0.0.0.0", port=port)       # Jalankan aplikasi
-
-
 # Load model
 model = load_model('model/skin_disease_model.keras')
 
